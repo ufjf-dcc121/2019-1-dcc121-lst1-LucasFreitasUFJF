@@ -7,11 +7,17 @@
 <body>
     <div id="x">7</div>
     <div id="y">5</div>
-    <div id="prudoto"></div>
+    <div id="produto"></div>
     <div id="soma"></div>
 
     <script>
-        
+        var x = document.getElementById("x").innerHTML;
+        var y = document.getElementById("y").innerHTML;
+        var produto = x*y;
+        var soma = Number(x) + Number(y);
+
+        document.getElementById("produto").innerHTML = "O produto de " + x + " e " + y + " é " + produto + "!";
+        document.getElementById("soma").innerHTML = "A soma de " + x + " e " + y + " é " + soma + "!";
     </script>
 </body>
 </html>
