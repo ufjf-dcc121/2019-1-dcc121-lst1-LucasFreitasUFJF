@@ -38,6 +38,15 @@
             resultado.innerHTML = "";
             melhorias.innerHTML = "";
         })
+
+        botaoAvaliar.addEventListener("click", function(){
+            media = (Number(confeitaria.innerHTML) + Number(coberturas.innerHTML) + Number(bolos.innerHTML))/3;
+            if(media >= 70) {
+                resultado.innerHTML = "Parabéns "+ nome.innerHTML +"! Você está aprovado com média "+ media +"!";
+            } else{
+                resultado.innerHTML = "Você está reprovado com média "+ media +"!"
+            }
+        })
     </script>
 
     
